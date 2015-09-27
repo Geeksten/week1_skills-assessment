@@ -65,7 +65,12 @@ def print_indeces(my_list):
 
     """
 
-    print "Nothing at all"
+    index = 0
+    for item in my_list:
+        print("{} {}").format(index, item)
+        index += 1
+
+print_indeces(["Toyota", "Jeep", "Volvo"])
 
 
 def long_words(word_list):

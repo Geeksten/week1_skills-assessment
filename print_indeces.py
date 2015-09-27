@@ -19,7 +19,7 @@ def print_indeces(my_list):
 
     index = 0
     for item in my_list:
-        print("{}  {}").format(index, item)
+        print("{} {}").format(index, item)
         index += 1
 
 print_indeces(["Toyota", "Jeep", "Volvo"])
