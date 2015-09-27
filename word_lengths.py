@@ -5,7 +5,6 @@ def word_lengths(word_list):
         [5, 3, 5, 4]
 
     """
-    index = 0
     length_of_words_list = []
     #while word_list[index] < len(word_list):
     for word in word_list[:]:
