@@ -122,8 +122,11 @@ def largest_int(number_list):
         True
 
     """
-
-    return 0
+    for num in number_list[:]:
+        return max(number_list)
+    #return 0
+print largest_int([-5, 2, -5, 7])
+print (largest_int([]) is None)
 
 
 def halvesies(number_list):
@@ -138,8 +141,20 @@ def halvesies(number_list):
         [0.5, 2.5]
 
     """
+    index = 0
+    #empty list to hold the halves. we will append to this as we go
+    list_of_halves = []
+    while number_list[index] < len(number_list):
+        for num in number_list:
+            half = (float(num)/2)
+            list_of_halves.append(half)
 
-    return []
+        index = index + 1
+    return list_of_halves
+
+print halvesies([2, 6, -2])
+print halvesies([1, 5])
+
 
 
 def word_lengths(word_list):
