@@ -191,7 +191,14 @@ def sum_numbers(number_list):
 
     """
 
-    return None
+    list_sum = 0
+    for num in number_list:
+        list_sum += num
+    return list_sum
+
+print sum_numbers([1, 2, 3, 10])
+print sum_numbers([])
+
 
 
 def mult_numbers(number_list):
