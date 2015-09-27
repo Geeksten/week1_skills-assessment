@@ -12,6 +12,6 @@ def all_odd(number_list):
         if num % 2 == 0:
             number_list.remove(num)
     return number_list
-
+#call the function
 print all_odd([1, 2, 7, -5])
 print all_odd([2, -6, 8])
