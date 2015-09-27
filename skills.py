@@ -156,7 +156,6 @@ print halvesies([2, 6, -2])
 print halvesies([1, 5])
 
 
-
 def word_lengths(word_list):
     """Return the length of words in the input list.
 
@@ -164,8 +163,16 @@ def word_lengths(word_list):
         [5, 3, 5, 4]
 
     """
+    length_of_words_list = []
+    #while word_list[index] < len(word_list):
+    for word in word_list[:]:
+        the_word_length = len(word)
+        length_of_words_list.append(the_word_length)
 
-    return []
+    #index = index + 1
+    return length_of_words_list
+    #return []
+print word_lengths(["hello", "hey", "hello", "spam"])
 
 
 def sum_numbers(number_list):
