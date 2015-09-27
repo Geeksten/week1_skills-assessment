@@ -200,7 +200,6 @@ print sum_numbers([1, 2, 3, 10])
 print sum_numbers([])
 
 
-
 def mult_numbers(number_list):
     """Return product (result of multiplication) of the numbers in the list.
 
@@ -219,8 +218,14 @@ def mult_numbers(number_list):
         1
 
     """
+    list_mult = 1
+    for num in number_list:
+        list_mult *= num
+    return list_mult
 
-    return None
+print mult_numbers([1, 2, 3])
+print mult_numbers([10, 20, 0, 50])
+print mult_numbers([])
 
 
 def join_strings(word_list):
