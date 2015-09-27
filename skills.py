@@ -101,8 +101,13 @@ def smallest_int(number_list):
         True
 
     """
+    for num in number_list[:]:
+        return min(number_list)
 
-    return 100
+        # find minimum value
+
+print smallest_int([-5, 2, -5, 7])
+print (smallest_int([]) is None)
 
 
 def largest_int(number_list):
