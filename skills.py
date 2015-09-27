@@ -268,6 +268,8 @@ def average(number_list):
     return average_nums
 
 print average([2, 12, 3])
+print average([])
+
 
 
 #############################################################################
