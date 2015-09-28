@@ -248,8 +248,12 @@ def join_strings(word_list):
         ''
 
     """
-
-    return "Not the right thing"
+    result_string = ''
+    for element in word_list:
+        result_string += element
+    return result_string
+print join_strings(["spam", "spam", "bacon", "balloonicorn"])
+print join_strings([])
 
 
 def average(number_list):
@@ -268,7 +272,7 @@ def average(number_list):
     return average_nums
 
 print average([2, 12, 3])
-print average([])
+#print average([])
 
 
 
