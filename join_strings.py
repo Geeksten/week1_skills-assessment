@@ -19,4 +19,3 @@ def join_strings(word_list):
     return result_string
 print join_strings(["spam", "spam", "bacon", "balloonicorn"])
 print join_strings([])
-
